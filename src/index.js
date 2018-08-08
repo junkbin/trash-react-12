@@ -5,6 +5,8 @@ import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
+import 'holderjs/holder.min.js';
+
 import App from './App';
 import indexRefs from './components';
 

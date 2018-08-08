@@ -14,16 +14,16 @@ export default class MainBoostrapHolder extends React.Component{
 
                     <div className="col-sm-6 ">
                         <div className="row">
-                            <div className="col-sm-12 mt-1 text-white rounded bg-secondary div-main-body">
-                                1.
+                            <div className="col-sm-12 mt-1 text-white rounded bg-light div-main-body make-center">
+                                <img className="rounded" src="holder.js/100px90?theme=sky&text=Hello"/>
                             </div>
 
-                            <div className="col-sm-12 mt-1 text-info rounded bg-secondary div-main-body">
-                                2.
+                            <div className="col-sm-12 mt-1 text-info rounded bg-light div-main-body make-center">
+                                <img className="rounded" src="holder.js/100px90?theme=vine&text=React"/>
                             </div>
 
-                            <div className="col-sm-12 mt-1 text-success rounded bg-secondary div-main-body">
-                                3.
+                            <div className="col-sm-12 mt-1 text-success rounded bg-light div-main-body make-center">
+                                <img className="rounded" src="holder.js/100px90?theme=lava&text=World" />
                             </div>
                         </div>
                     </div>

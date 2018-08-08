@@ -21,6 +21,10 @@ VSCODE version: 1.25.1
     </code>
 </pre>
 
+## Fontawsome integration ##
+https://fontawesome.com/how-to-use/on-the-web/using-with/react <br />
+https://github.com/FortAwesome/react-fontawesome
+
 ***
 
 ## Description ##

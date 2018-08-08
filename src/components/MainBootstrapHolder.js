@@ -1,12 +1,20 @@
 import React from 'react';
 import './MainBootstrap.css';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import * as fa from '@fortawesome/free-solid-svg-icons';
+import  * as fab from '@fortawesome/free-brands-svg-icons';
+
+
 export default class MainBoostrapHolder extends React.Component{
     render(){
         return (
             <div className="container">
                 <div className="fixed-top bg-info div-fixed-height">
-                    Header.
+                    Header. 
+                    <FontAwesomeIcon icon={fab.faSkype} />
+                    <FontAwesomeIcon icon={fa.faBomb} spin/>
+
                 </div>
 
                 <div className="row div-margin-top">

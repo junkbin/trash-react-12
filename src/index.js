@@ -6,7 +6,7 @@ import './index.css';
 import App from './App';
 import indexRefs from './components';
 
-const RootElem = indexRefs.MainHello;
+const RootElem = indexRefs.MainInlineStyle;
 
 ReactDOM.render(<RootElem />, document.getElementById('root'));
 registerServiceWorker();

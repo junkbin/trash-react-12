@@ -9,6 +9,11 @@
 
 ## Emment in reactjs
 https://stackoverflow.com/questions/39320393/jsx-or-html-autocompletion-in-visual-studio-code
-"emmet.includeLanguages": {
-    "javascript": "html"
-}
+
+<pre>
+    <code>
+        "emmet.includeLanguages": {
+            "javascript": "html"
+        }
+    </code>
+</pre>

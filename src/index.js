@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import App from './App';
 import indexRefs from './components';
 
-const RootElem = indexRefs.MainBootstrap;
+const RootElem = indexRefs.MainBootstrapHolder;
 
 ReactDOM.render(<RootElem />, document.getElementById('root'));
 registerServiceWorker();

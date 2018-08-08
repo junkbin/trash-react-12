@@ -5,7 +5,10 @@
 * events
 * lifecycle
 * styling (inline and seprate css file)
+* bootstrap
 * react-bootstrap
+* holder js integration
+* glyphicon integration.
 
 ## Emment in reactjs
 https://stackoverflow.com/questions/39320393/jsx-or-html-autocompletion-in-visual-studio-code <br />

@@ -18,7 +18,7 @@ import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 // Local components. 
 import App from './App';
-import indexRefs from './components';
+import indexRefs from './day1';
 
 const RootElem = indexRefs.MainBootstrapHolder;
 

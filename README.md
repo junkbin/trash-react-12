@@ -8,8 +8,8 @@
 * react-bootstrap
 
 ## Emment in reactjs
-https://stackoverflow.com/questions/39320393/jsx-or-html-autocompletion-in-visual-studio-code
-
+https://stackoverflow.com/questions/39320393/jsx-or-html-autocompletion-in-visual-studio-code <br />
+VSCODE version: 1.25.1
 <pre>
     <code>
         "emmet.includeLanguages": {
@@ -20,15 +20,13 @@ https://stackoverflow.com/questions/39320393/jsx-or-html-autocompletion-in-visua
 
 ***
 
-## Paragraphs ##
+## Description ##
 <p>
-    No ESLint configuration (e.g .eslintrc) found for fil js No ESLint configuration (e.g .eslintrc) found for fil js 
+    Detail description about the projects. 
 </p>
 
-## Blockquote ##
-> No ESLint configuration (e.g .eslintrc) found for fil js 
->  will not be validated. Consider runni
-> No ESLint configuration (e.g .eslintrc) found for fil js 
->  will not be validated. Consider runnis
+## Note ##
+> Reactjs basic setup, life cycle handler 
+> managing states
 
  

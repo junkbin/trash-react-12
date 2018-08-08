@@ -9,16 +9,18 @@ import 'bootstrap/dist/css/bootstrap.css';
 // Holderjs Client image place holder. 
 import 'holderjs/holder.min.js';
 
-// FontAwsome
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
-// library.add(fab, faCheckSquare, faCoffee)
-
 // Local components. 
 import App from './App';
 import indexRefs from './day1';
+
+
+// FontAwsome
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
+library.add(fab, fas, far);
+
 
 const RootElem = indexRefs.MainBootstrapHolder;
 

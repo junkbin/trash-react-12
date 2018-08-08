@@ -2,8 +2,6 @@ import React from 'react';
 import './MainBootstrap.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import * as fa from '@fortawesome/free-solid-svg-icons';
-import  * as fab from '@fortawesome/free-brands-svg-icons';
 
 
 export default class MainBoostrapHolder extends React.Component{
@@ -12,9 +10,10 @@ export default class MainBoostrapHolder extends React.Component{
             <div className="container">
                 <div className="fixed-top bg-info div-fixed-height">
                     Header. 
-                    <FontAwesomeIcon icon={fab.faSkype} />
-                    <FontAwesomeIcon icon={fa.faBomb} spin/>
-
+                    <FontAwesomeIcon icon="building" fixedWidth />
+                    <FontAwesomeIcon icon={['far', 'building']} fixedWidth listItem />
+                    <FontAwesomeIcon icon={['fas', 'building']} fixedWidth inverse/>
+                    <FontAwesomeIcon icon={['fab', 'apple']} fixedWidth/>
                 </div>
 
                 <div className="row div-margin-top">

@@ -21,6 +21,6 @@ https://stackoverflow.com/questions/39320393/jsx-or-html-autocompletion-in-visua
 > No ESLint configuration (e.g .eslintrc) found for fil js 
 >  will not be validated. Consider runni
 > No ESLint configuration (e.g .eslintrc) found for fil js 
->  will not be validated. Consider runni
+>  will not be validated. Consider runnis
 
  

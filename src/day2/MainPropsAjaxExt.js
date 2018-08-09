@@ -5,10 +5,37 @@ import MainPropsHeader from './MainPropsHeader';
 import MainPropsFooter from './MainPropsFooter';
 import MainPropsCenter from './MainPropsCenter';
 
-export default class MainProps extends React.Component{
+export default class MainPropsAjaxExt extends React.Component{
     constructor(props){
         super(props);
-        this.state = {"ctime" : Date.now(), "cardList" : []}; 
+
+        this.addPost = this.addPost.bind(this);
+        this.readInput = this.readInput.bind(this);
+
+        this.state = {"ctime" : Date.now(), "refList":[],  "cardList" : [], "postBox":""}; 
+    }
+
+    readInput(e){
+        console.log(e.target.value);
+
+        if(e && e.target.value !== ""){
+            this.setState({"postBox" : e.target.value});
+        }
+    }
+
+    addPost(e){
+        if(this.state.postBox !== ""){
+            let refList = this.state.refList;
+            
+            let ref = {"title" : this.state.postBox, "id": refList.length + 1};
+            refList.splice(0, 0, ref);
+            
+            let cardList = refList.map((item)=>
+                <MainPropsCenter item={item.title} key={item.id} />
+            );
+
+            this.setState({cardList, "postBox":""});
+        }
     }
 
     async getAjaxRequest() {
@@ -33,7 +60,7 @@ export default class MainProps extends React.Component{
                 <MainPropsCenter item={item.title} key={item.id} />
             );
             
-            this.setState({cardList});
+            this.setState({cardList, "refList": data});
         }).catch((err)=>{
             console.log(err);
         });
@@ -42,7 +69,7 @@ export default class MainProps extends React.Component{
     render(){
         return (
             <div className="container">
-                <MainPropsHeader />
+                <MainPropsHeader postBox={this.state.postBox}  readInput={this.readInput} addPost={this.addPost}  />
 
                 <div className="row div-fix-top-margin">
                     <div className="col-sm-2"></div>

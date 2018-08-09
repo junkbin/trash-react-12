@@ -1,15 +1,15 @@
 import React from 'react';
 
 import './MainProps.css';
+import MainPropsHeader from './MainPropsHeader';
+import MainPropsFooter from './MainPropsFooter';
 
 export default class MainProps extends React.Component{
     render(){
         return (
             <div className="container">
-                {/* HEADER SECTION */}
-                <div className="bg-info fixed-top div-fix-height">
-                </div>
-
+                {/* Header Section */}
+                <MainPropsHeader />
 
                 {/* BODY SECTION */}
                 <div className="row div-fix-top-margin">
@@ -42,9 +42,8 @@ export default class MainProps extends React.Component{
                     <div className="col-sm-3"></div>
                 </div>
 
-                {/* FOOTER SECTION */}
-                <div className="bg-info fixed-bottom div-fix-height">
-                </div>
+                {/* Footer Section */}
+                <MainPropsFooter />
             </div>
         );
     }

@@ -8,7 +8,7 @@ import MainPropsCenter from './MainPropsCenter';
 export default class MainProps extends React.Component{
     constructor(props){
         super(props);
-        this.state = {"ctime" : Date.now(), "cardList" : ["Kharghar"]}; 
+        this.state = {"ctime" : Date.now(), "cardList" : ["Kharghar"], "cardList1":[]}; 
     }
 
     /* During Mount */
@@ -16,9 +16,16 @@ export default class MainProps extends React.Component{
         console.log("During Mount", this.state.cardList);
 
         const cardList = ["Kharghar", "Belapur", "Nerul", "Jui Nagar", "Sanpada", "Vashi"];
+        const cardList1 = cardList.map((item, index)=>
+            <MainPropsCenter item={item + " world!!"} key={index+1} />
+        );
         
         setTimeout(()=>{
-            this.setState({"cardList" : cardList});
+            this.setState({cardList});
+        }, 200);
+
+        setTimeout(()=>{
+            this.setState({cardList1});
         }, 1000);
     }
 
@@ -43,6 +50,8 @@ export default class MainProps extends React.Component{
                     <div className="col-sm-3"></div>
 
                     <div className="col-sm-6">
+                        {this.state.cardList1}
+
                         {this.state.cardList.map((item, index)=>
                             <MainPropsCenter item={item} key={index} />
                         )}

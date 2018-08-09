@@ -22,7 +22,7 @@ import { far } from '@fortawesome/free-regular-svg-icons';
 library.add(fab, fas, far);
 
 
-const RootElem = indexRefs.MainProps;
+const RootElem = indexRefs.MainPropsExt;
 
 ReactDOM.render(<RootElem />, document.getElementById('root'));
 registerServiceWorker();

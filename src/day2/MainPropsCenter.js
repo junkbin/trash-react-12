@@ -23,7 +23,9 @@ export default class MainPropsCenter extends React.Component{
         return (
             <div className="row mt-1">
                 <div className="col-sm-12 bg-light rounded div-card-height make-center">
-                    {this.props.item}
+                    <blockquote class="blockquote">
+                        <p class="mb-0">{this.props.item}</p>
+                    </blockquote>
                 </div>
             </div>
         );

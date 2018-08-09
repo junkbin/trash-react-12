@@ -5,6 +5,26 @@ import MainPropsHeader from './MainPropsHeader';
 import MainPropsFooter from './MainPropsFooter';
 
 export default class MainProps extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = {"ctime" : Date.now()};
+    }
+
+    /* During Mount */
+    componentDidMount(){
+        console.log("During Mount");
+    }
+
+    /** During Update */
+    componentDidUpdate(prevProps, prevState, snapshot){
+        console.log("During Update");
+    }
+
+    /* During Unmount */
+    componentWillUnmount(){
+        console.log("During Unmount");
+    }
+
     render(){
         return (
             <div className="container">

@@ -9,3 +9,9 @@
 .div-card-height{
     height: 150px;
 }
+
+.make-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

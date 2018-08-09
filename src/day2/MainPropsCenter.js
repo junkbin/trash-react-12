@@ -1,4 +1,5 @@
 import React from 'react';
+import './MainProps.css';
 
 export default class MainPropsCenter extends React.Component{
     constructor(props){
@@ -21,7 +22,7 @@ export default class MainPropsCenter extends React.Component{
     render(){
         return (
             <div className="row mt-1">
-                <div className="col-sm-12 bg-light rounded div-card-height">
+                <div className="col-sm-12 bg-light rounded div-card-height make-center">
                     {this.props.item}
                 </div>
             </div>

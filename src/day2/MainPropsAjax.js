@@ -25,7 +25,7 @@ export default class MainProps extends React.Component{
     componentDidMount(){
         const mpromise = this.getAjaxRequest();
         mpromise.then((data)=>{
-            
+
             return data.json();
         }).then((data)=>{
 
@@ -45,13 +45,13 @@ export default class MainProps extends React.Component{
                 <MainPropsHeader />
 
                 <div className="row div-fix-top-margin">
-                    <div className="col-sm-3"></div>
+                    <div className="col-sm-2"></div>
 
-                    <div className="col-sm-6">
+                    <div className="col-sm-8">
                         {this.state.cardList}
                     </div>
 
-                    <div className="col-sm-3"></div>
+                    <div className="col-sm-2"></div>
                 </div>
 
                 <MainPropsFooter />

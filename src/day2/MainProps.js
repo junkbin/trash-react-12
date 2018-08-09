@@ -3,6 +3,7 @@ import React from 'react';
 import './MainProps.css';
 import MainPropsHeader from './MainPropsHeader';
 import MainPropsFooter from './MainPropsFooter';
+import MainPropsCenter from './MainPropsCenter';
 
 export default class MainProps extends React.Component{
     constructor(props){
@@ -32,13 +33,6 @@ export default class MainProps extends React.Component{
     }
 
     render(){
-        /*const newCardList = this.state.cardList.map((item)=>{
-            <div className="row mt-1">
-                <div className="col-sm-12 bg-light rounded div-card-height">
-                </div>
-            </div>
-        });*/
-
         return (
             <div className="container">
                 {/* Header Section */}
@@ -49,13 +43,9 @@ export default class MainProps extends React.Component{
                     <div className="col-sm-3"></div>
 
                     <div className="col-sm-6">
-                        {this.state.cardList.map((item, index)=>{
-                            <div key={index} className="row mt-1">
-                                <div className="col-sm-12 bg-light rounded div-card-height">
-                                    {item}
-                                </div>
-                            </div>
-                        })}
+                        {this.state.cardList.map((item, index)=>
+                            <MainPropsCenter item={item} key={index} />
+                        )}
                     </div>
 
                     <div className="col-sm-3"></div>

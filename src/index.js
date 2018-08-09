@@ -11,7 +11,7 @@ import 'holderjs/holder.min.js';
 
 // Local components. 
 import App from './App';
-import indexRefs from './day1';
+import indexRefs from './day2';
 
 
 // FontAwsome
@@ -22,7 +22,7 @@ import { far } from '@fortawesome/free-regular-svg-icons';
 library.add(fab, fas, far);
 
 
-const RootElem = indexRefs.MainBootstrapHolder;
+const RootElem = indexRefs.MainProps;
 
 ReactDOM.render(<RootElem />, document.getElementById('root'));
 registerServiceWorker();

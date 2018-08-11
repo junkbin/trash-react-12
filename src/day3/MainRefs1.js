@@ -13,6 +13,10 @@ export default class MainRefs1 extends React.Component {
         this.update = this.update.bind(this);
     }
 
+    componentDidMount(){
+        this.aref.current.focus();
+    }
+
     update(){
         let a = this.aref.current.value;
         let b = this.refs.b.value;

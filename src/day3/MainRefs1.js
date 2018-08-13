@@ -6,7 +6,7 @@ export default class MainRefs1 extends React.Component {
 
     constructor(props){
         super(props);
-        this.state = {"a" : "...", "b" : "...", "c": "...", "d":""}
+        this.state = {"a" : "...", "b" : "...", "c": "...", "d":"", "e" : "..."}
 
         this.aref = React.createRef();
 

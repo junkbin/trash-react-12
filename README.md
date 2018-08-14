@@ -10,6 +10,8 @@
 * react-bootstrap
 * holder js integration
 * glyphicon integration.
+* Type check with inbuild PropTypes support.
+* Type check using Flow library. 
 
 ## Emment in reactjs
 https://stackoverflow.com/questions/39320393/jsx-or-html-autocompletion-in-visual-studio-code <br />

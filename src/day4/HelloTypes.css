@@ -1,0 +1,17 @@
+.div-fix-height{
+    height: 60px;
+}
+
+.div-top-margin {
+    margin-top: 66px;
+}
+
+.make-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-min-height{
+    min-height: 100px;
+}

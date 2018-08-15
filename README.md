@@ -11,7 +11,9 @@
 * holder js integration
 * glyphicon integration.
 * Type check with inbuild PropTypes support.
-* Type check using Flow library. 
+* Type check using Flow library.
+* Context
+* Redux 
 
 ## Emment in reactjs
 https://stackoverflow.com/questions/39320393/jsx-or-html-autocompletion-in-visual-studio-code <br />
@@ -39,4 +41,3 @@ https://github.com/FortAwesome/react-fontawesome
 > Reactjs basic setup, life cycle handler 
 > managing states
 
- 

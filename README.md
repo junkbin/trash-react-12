@@ -13,7 +13,7 @@
 * Type check with inbuild PropTypes support.
 * Type check using Flow library.
 * Context
-* Redux 
+* Reduxx 
 
 ## Emment in reactjs
 https://stackoverflow.com/questions/39320393/jsx-or-html-autocompletion-in-visual-studio-code <br />
